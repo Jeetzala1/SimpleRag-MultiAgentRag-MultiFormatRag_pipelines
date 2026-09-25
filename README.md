@@ -1,16 +1,16 @@
-# RAG Systems Repository
+﻿# RAG Systems Repository
 
 A comprehensive collection of Retrieval Augmented Generation (RAG) implementations showcasing different approaches to document-based question answering.
 Build AI systems that answer questions from your documents. Three ready-to-use implementations: upload PDFs and get instant answers (Basic), collaborate with specialized AI agents for better responses (Multi-Agent), or process multiple file types with production features (Enhanced). Each system includes complete setup guides and runs locally with Streamlit.
 
 ## Quick Navigation
 
-📂 **Individual System Documentation:**
-- [Basic RAG Chatbot](https://github.com/sagarrajak245/ChatBot-Simple_Rag-MultiAgentic_Rag/blob/main/simpleRag.md) - Core RAG concepts and implementation
-- [Multi-Agent RAG System](https://github.com/sagarrajak245/ChatBot-Simple_Rag-MultiAgentic_Rag/blob/main/MultiAgent-RagSystem.md) - Agent collaboration and orchestration  
-- [Enhanced Multi-Document RAG](https://github.com/sagarrajak245/ChatBot-Simple_Rag-MultiAgentic_Rag/blob/main/Multi-Document_Rag.md) - Production-ready multi-format system
+ðŸ“‚ **Individual System Documentation:**
+- [Basic RAG Chatbot](https://github.com/Jeetzala1/ChatBot-Simple_Rag-MultiAgentic_Rag/blob/main/simpleRag.md) - Core RAG concepts and implementation
+- [Multi-Agent RAG System](https://github.com/Jeetzala1/ChatBot-Simple_Rag-MultiAgentic_Rag/blob/main/MultiAgent-RagSystem.md) - Agent collaboration and orchestration  
+- [Enhanced Multi-Document RAG](https://github.com/Jeetzala1/ChatBot-Simple_Rag-MultiAgentic_Rag/blob/main/Multi-Document_Rag.md) - Production-ready multi-format system
 
-📋 **System Comparison Table** ⬇️
+ðŸ“‹ **System Comparison Table** â¬‡ï¸
 
 ## What is RAG?  
 - [Medium RAg DOC](https://netraneupane.medium.com/retrieval-augmented-generation-rag-26c924ad8181)
@@ -29,13 +29,13 @@ Build AI systems that answer questions from your documents. Three ready-to-use i
 |---------|-----------|-----------------|----------------------------|
 | **Architecture** | Single LLM | 3 specialized agents | Multi-agent + LCEL chains |
 | **Document Support** | PDF only | PDF only | PDF, TXT, CSV, DOCX |
-| **Processing** | Direct Q&A | Research → Answer → Critique | Retrieval → Answer → Refinement |
+| **Processing** | Direct Q&A | Research â†’ Answer â†’ Critique | Retrieval â†’ Answer â†’ Refinement |
 | **UI Complexity** | Simple | Intermediate | Advanced |
 | **Best For** | Learning RAG basics | Understanding agent collaboration | Production applications |
 
 ## 1. Basic RAG Chatbot
 
-📚 **[View Complete Documentation →]([./basic-rag/README.md](https://github.com/sagarrajak245/ChatBot-Simple_Rag-MultiAgentic_Rag/blob/main/simpleRag.md))**
+ðŸ“š **[View Complete Documentation â†’]([./basic-rag/README.md](https://github.com/Jeetzala1/ChatBot-Simple_Rag-MultiAgentic_Rag/blob/main/simpleRag.md))**
 
 ### Overview
 A straightforward RAG implementation perfect for understanding core concepts.
@@ -48,7 +48,7 @@ A straightforward RAG implementation perfect for understanding core concepts.
 
 ### Architecture
 ```
-PDF → Text Chunks → Embeddings → Vector Store → Question → Context Retrieval → LLM → Answer
+PDF â†’ Text Chunks â†’ Embeddings â†’ Vector Store â†’ Question â†’ Context Retrieval â†’ LLM â†’ Answer
 ```
 
 ### Use Cases
@@ -64,7 +64,7 @@ streamlit run basic_rag.py
 
 ## 2. Multi-Agent RAG System
 
-📚 **[View Complete Documentation →]([./multi-agent-rag/README.md](https://github.com/sagarrajak245/ChatBot-Simple_Rag-MultiAgentic_Rag/blob/main/MultiAgent-RagSystem.md))**
+ðŸ“š **[View Complete Documentation â†’]([./multi-agent-rag/README.md](https://github.com/Jeetzala1/ChatBot-Simple_Rag-MultiAgentic_Rag/blob/main/MultiAgent-RagSystem.md))**
 
 ### Overview
 Demonstrates agent collaboration with specialized roles for research, answering, and critique.
@@ -77,7 +77,7 @@ Demonstrates agent collaboration with specialized roles for research, answering,
 
 ### Architecture
 ```
-Question → Research Agent → Answer Agent → Critic Agent → Final Answer
+Question â†’ Research Agent â†’ Answer Agent â†’ Critic Agent â†’ Final Answer
            (Find Context)   (Draft Answer)  (Refine & Polish)
 ```
 
@@ -99,7 +99,7 @@ streamlit run multi_agent_rag.py
 
 ## 3. Enhanced Multi-Document RAG
 
-📚 **[View Complete Documentation →]([./enhanced-multi-doc-rag/README.md](https://github.com/sagarrajak245/ChatBot-Simple_Rag-MultiAgentic_Rag/blob/main/Multi-Document_Rag.md))**
+ðŸ“š **[View Complete Documentation â†’]([./enhanced-multi-doc-rag/README.md](https://github.com/Jeetzala1/ChatBot-Simple_Rag-MultiAgentic_Rag/blob/main/Multi-Document_Rag.md))**
 
 ### Overview
 Production-ready system handling multiple document formats with advanced processing.
@@ -113,7 +113,7 @@ Production-ready system handling multiple document formats with advanced process
 
 ### Architecture
 ```
-Multiple Documents → Unified Processing → Vector Store → Multi-Agent Pipeline → Enhanced Results
+Multiple Documents â†’ Unified Processing â†’ Vector Store â†’ Multi-Agent Pipeline â†’ Enhanced Results
 ```
 
 ### Processing Pipeline
@@ -227,17 +227,17 @@ Use **Enhanced Multi-Document RAG** for:
 
 ### Single-Agent Pattern (Basic RAG)
 ```
-User Question → Document Search → Context Assembly → LLM Generation → Answer
+User Question â†’ Document Search â†’ Context Assembly â†’ LLM Generation â†’ Answer
 ```
 
 ### Multi-Agent Pattern (Agent RAG)
 ```
-Question → Agent 1 (Research) → Agent 2 (Answer) → Agent 3 (Critique) → Final Answer
+Question â†’ Agent 1 (Research) â†’ Agent 2 (Answer) â†’ Agent 3 (Critique) â†’ Final Answer
 ```
 
 ### Chain Pattern (Enhanced RAG)
 ```
-Documents → Processing Chain → Retrieval Chain → Answer Chain → Critic Chain → Result
+Documents â†’ Processing Chain â†’ Retrieval Chain â†’ Answer Chain â†’ Critic Chain â†’ Result
 ```
 
 ## Performance Considerations
@@ -348,8 +348,8 @@ MIT License - See individual system directories for specific details.
 ---
 
 **Choose Your RAG Journey:**
-- 🚀 **New to RAG?** → Start with Basic RAG
-- 🤖 **Want Agent Collaboration?** → Try Multi-Agent RAG  
-- 🏢 **Building Production Apps?** → Use Enhanced Multi-Document RAG
+- ðŸš€ **New to RAG?** â†’ Start with Basic RAG
+- ðŸ¤– **Want Agent Collaboration?** â†’ Try Multi-Agent RAG  
+- ðŸ¢ **Building Production Apps?** â†’ Use Enhanced Multi-Document RAG
 
 Each implementation builds upon the previous, creating a comprehensive learning and development path for RAG systems.
